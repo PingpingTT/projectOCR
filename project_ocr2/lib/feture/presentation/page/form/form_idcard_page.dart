@@ -18,7 +18,6 @@ class _FormIdcardPageState extends State<FormIdcardPage> {
   late TextEditingController dobCtrl;
   late TextEditingController issueCtrl;
   late TextEditingController expireCtrl;
-  late TextEditingController addressCtrl;
 
   @override
   void initState() {
@@ -99,7 +98,6 @@ class _FormIdcardPageState extends State<FormIdcardPage> {
                       birthDate: dobCtrl.text,
                       issueDate: issueCtrl.text,
                       expiryDate: expireCtrl.text,
-                      address: addressCtrl.text,
                     );
 
                     debugPrint("SAVE SUCCESS");

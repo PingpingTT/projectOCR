@@ -16,6 +16,11 @@ class IdCardRemoteDataSourceImpl implements IdCardRemoteDataSource {
     );
 
     final streamedResponse = await request.send();
-    return http.Response.fromStream(streamedResponse);
+    final response = await http.Response.fromStream(streamedResponse);
+
+    print("STATUS CODE: ${response.statusCode}");
+    print("RAW RESPONSE: ${response.body}");
+    return response;
+    
   }
 }

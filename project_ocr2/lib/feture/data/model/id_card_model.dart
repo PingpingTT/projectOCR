@@ -6,7 +6,6 @@ class IdCardModel {
   final String birthDate;
   final String issueDate;
   final String expiryDate;
-  final String address;
 
   IdCardModel({
     required this.idCard,
@@ -14,7 +13,7 @@ class IdCardModel {
     required this.birthDate,
     required this.issueDate,
     required this.expiryDate,
-    required this.address,
+
   });
 
   factory IdCardModel.fromJson(Map<String, dynamic> json) {
@@ -26,7 +25,6 @@ class IdCardModel {
       birthDate: json['birthDate']?.toString() ?? '',
       issueDate: json['issueDate']?.toString() ?? '',
       expiryDate: json['expiryDate']?.toString() ?? '',
-      address: json['address']?.toString() ?? '',
     );
   }
 
@@ -35,7 +33,6 @@ class IdCardModel {
       idCard: idCard,
       fullName: fullName,
       birthDate: birthDate,
-      address: address,
       issueDate: issueDate,
       expiryDate: expiryDate,
     );

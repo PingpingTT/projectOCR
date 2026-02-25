@@ -4,7 +4,7 @@ class IdCardEntity  {
   final String birthDate;
   final String issueDate;
   final String expiryDate;
-  final String address;
+
 
   const IdCardEntity({
     required this.idCard,
@@ -12,6 +12,5 @@ class IdCardEntity  {
     required this.birthDate,
     required this.issueDate,
     required this.expiryDate,
-    required this.address,
   });
 }
