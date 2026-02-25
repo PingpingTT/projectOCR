@@ -12,7 +12,7 @@ class IdCardEntity {
     required this.issueDate,
     required this.expiryDate,
   });
-  @override
+
   List<Object?> get props => [
     idCard,
     fullName,
