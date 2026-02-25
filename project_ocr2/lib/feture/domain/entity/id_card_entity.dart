@@ -1,10 +1,9 @@
-class IdCardEntity  {
+class IdCardEntity {
   final String idCard;
   final String fullName;
   final String birthDate;
   final String issueDate;
   final String expiryDate;
-
 
   const IdCardEntity({
     required this.idCard,
@@ -13,4 +12,12 @@ class IdCardEntity  {
     required this.issueDate,
     required this.expiryDate,
   });
+  @override
+  List<Object?> get props => [
+    idCard,
+    fullName,
+    birthDate,
+    issueDate,
+    expiryDate,
+  ];
 }
